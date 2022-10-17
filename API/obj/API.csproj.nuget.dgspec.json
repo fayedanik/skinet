@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/fayedanik/Pet Projects 2/skinet/API/API.csproj": {}
+    "C:\\Fayed Anik\\skinet\\API\\API.csproj": {}
   },
   "projects": {
-    "/Users/fayedanik/Pet Projects 2/skinet/API/API.csproj": {
+    "C:\\Fayed Anik\\skinet\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/fayedanik/Pet Projects 2/skinet/API/API.csproj",
+        "projectUniqueName": "C:\\Fayed Anik\\skinet\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/fayedanik/Pet Projects 2/skinet/API/API.csproj",
-        "packagesPath": "/Users/fayedanik/.nuget/packages/",
-        "outputPath": "/Users/fayedanik/Pet Projects 2/skinet/API/obj/",
+        "projectPath": "C:\\Fayed Anik\\skinet\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\fayed\\.nuget\\packages\\",
+        "outputPath": "C:\\Fayed Anik\\skinet\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/fayedanik/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\fayed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +40,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -62,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

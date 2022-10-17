@@ -25,3 +25,30 @@
 /Users/fayedanik/Pet Projects 2/skinet/API/obj/Debug/net6.0/API.pdb
 /Users/fayedanik/Pet Projects 2/skinet/API/obj/Debug/net6.0/API.genruntimeconfig.cache
 /Users/fayedanik/Pet Projects 2/skinet/API/obj/Debug/net6.0/ref/API.dll
+C:\Fayed Anik\skinet\API\bin\Debug\net6.0\appsettings.Development.json
+C:\Fayed Anik\skinet\API\bin\Debug\net6.0\appsettings.json
+C:\Fayed Anik\skinet\API\bin\Debug\net6.0\API.exe
+C:\Fayed Anik\skinet\API\bin\Debug\net6.0\API.deps.json
+C:\Fayed Anik\skinet\API\bin\Debug\net6.0\API.runtimeconfig.json
+C:\Fayed Anik\skinet\API\bin\Debug\net6.0\API.dll
+C:\Fayed Anik\skinet\API\bin\Debug\net6.0\API.pdb
+C:\Fayed Anik\skinet\API\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Fayed Anik\skinet\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Fayed Anik\skinet\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Fayed Anik\skinet\API\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\API.csproj.AssemblyReference.cache
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\API.AssemblyInfoInputs.cache
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\API.AssemblyInfo.cs
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\API.csproj.CoreCompileInputs.cache
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cache
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\staticwebassets.build.json
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\staticwebassets.development.json
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\scopedcss\bundle\API.styles.css
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\API.csproj.CopyComplete
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\API.dll
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\refint\API.dll
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\API.pdb
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\API.genruntimeconfig.cache
+C:\Fayed Anik\skinet\API\obj\Debug\net6.0\ref\API.dll
