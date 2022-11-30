@@ -1,8 +1,11 @@
-﻿namespace API.Entities
+﻿using System;
+namespace Core.Entities
 {
-    public class AppUser
+    public class Product
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
     }
 }
+
