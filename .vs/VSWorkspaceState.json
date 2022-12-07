@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\API"
+    "\\API",
+    "\\Core",
+    "\\Core\\Entities",
+    "\\Core\\Interfaces",
+    "\\Infrastructure",
+    "\\Infrastructure\\Data",
+    "\\Infrastructure\\Data\\Migrations"
   ],
+  "SelectedNode": "\\Infrastructure\\Data\\Migrations\\20221204055617_InitialCreate.cs",
   "PreviewInSolutionExplorer": false
 }

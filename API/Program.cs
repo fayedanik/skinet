@@ -1,6 +1,6 @@
+using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
 
 builder.Services.AddControllers();
+
+builder.Services.AddScoped<IProductRepository,ProductRepository>();
 
 builder.Services.AddDbContext<StoreContext>(x => 
     x.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
@@ -31,5 +33,21 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+using(var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var loggerFactory = services.GetRequiredService<ILoggerFactory>();
+    try
+    {
+        var context = services.GetRequiredService<StoreContext>();
+        await context.Database.MigrateAsync();
+    }
+    catch( Exception ex )
+    {
+        var logger = loggerFactory.CreateLogger<Program>();
+        logger.LogError(ex, "An error occured during migration");
+    }
+}
 
 app.Run();
