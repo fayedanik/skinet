@@ -30,6 +30,13 @@ namespace API.Controllers
             return Ok(product);
         }
 
+        [HttpGet("brands")]
+        public async Task<ActionResult<IReadOnlyList<ProductBrand>>> GetProductBrands()
+        {
+            var productbrands = await _productRepository.GetProductBrandsAsync();
+            return Ok(productbrands);
+        }
+
 
     }
 }
