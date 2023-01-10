@@ -17,7 +17,9 @@ namespace Infrastructure.Data
             {
                 if(!context.ProductBrands.Any())
                 {
-                    var brandsData = File.ReadAllText("../Infrastructure/Data/SeedData/brands.json");
+                    var path = "../Infrastructure/Data/SeedData/brands.json";
+                    if (!File.Exists(path)) return;
+                    var brandsData = File.ReadAllText(path);
                     var brands = JsonSerializer.Deserialize<List<ProductBrand>>(brandsData);
                     if( brands is not null )
                     {
@@ -35,7 +37,9 @@ namespace Infrastructure.Data
 
                 if(!context.ProductTypes.Any())
                 {
-                    var productTypesData = File.ReadAllText("../Infrastructure/Data/SeedData/types.json");
+                    var path = "../Infrastructure/Data/SeedData/types.json";
+                    if (!File.Exists(path)) return;
+                    var productTypesData = File.ReadAllText(path);
                     var types = JsonSerializer.Deserialize<List<ProductType>>(productTypesData);
                     if( types is not null )
                     {
