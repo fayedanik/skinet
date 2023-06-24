@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Core.Interfaces;
 using System.Threading.Tasks;
 using Core.Entities;
-using Core.Interfaces;
 using Microsoft.EntityFrameworkCore;
 namespace Infrastructure.Data
 {

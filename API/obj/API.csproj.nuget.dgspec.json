@@ -1,36 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Fayed Anik\\skinet\\API\\API.csproj": {}
+    "/Users/fayedanik/Pet Projects 2/skinet/API/API.csproj": {}
   },
   "projects": {
-    "C:\\Fayed Anik\\skinet\\API\\API.csproj": {
+    "/Users/fayedanik/Pet Projects 2/skinet/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Fayed Anik\\skinet\\API\\API.csproj",
+        "projectUniqueName": "/Users/fayedanik/Pet Projects 2/skinet/API/API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Fayed Anik\\skinet\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\fayed\\.nuget\\packages\\",
-        "outputPath": "C:\\Fayed Anik\\skinet\\API\\obj\\",
+        "projectPath": "/Users/fayedanik/Pet Projects 2/skinet/API/API.csproj",
+        "packagesPath": "/Users/fayedanik/.nuget/packages/",
+        "outputPath": "/Users/fayedanik/Pet Projects 2/skinet/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fayed\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/fayedanik/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.selise.biz/nuget/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Fayed Anik\\skinet\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Fayed Anik\\skinet\\Infrastructure\\Infrastructure.csproj"
+              "/Users/fayedanik/Pet Projects 2/skinet/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/fayedanik/Pet Projects 2/skinet/Infrastructure/Infrastructure.csproj"
               }
             }
           }
@@ -79,30 +76,27 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Fayed Anik\\skinet\\Core\\Core.csproj": {
+    "/Users/fayedanik/Pet Projects 2/skinet/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Fayed Anik\\skinet\\Core\\Core.csproj",
+        "projectUniqueName": "/Users/fayedanik/Pet Projects 2/skinet/Core/Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Fayed Anik\\skinet\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\fayed\\.nuget\\packages\\",
-        "outputPath": "C:\\Fayed Anik\\skinet\\Core\\obj\\",
+        "projectPath": "/Users/fayedanik/Pet Projects 2/skinet/Core/Core.csproj",
+        "packagesPath": "/Users/fayedanik/.nuget/packages/",
+        "outputPath": "/Users/fayedanik/Pet Projects 2/skinet/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fayed\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/fayedanik/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.selise.biz/nuget/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -135,37 +129,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Fayed Anik\\skinet\\Infrastructure\\Infrastructure.csproj": {
+    "/Users/fayedanik/Pet Projects 2/skinet/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Fayed Anik\\skinet\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "/Users/fayedanik/Pet Projects 2/skinet/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Fayed Anik\\skinet\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\fayed\\.nuget\\packages\\",
-        "outputPath": "C:\\Fayed Anik\\skinet\\Infrastructure\\obj\\",
+        "projectPath": "/Users/fayedanik/Pet Projects 2/skinet/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/fayedanik/.nuget/packages/",
+        "outputPath": "/Users/fayedanik/Pet Projects 2/skinet/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fayed\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/fayedanik/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.selise.biz/nuget/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Fayed Anik\\skinet\\Core\\Core.csproj": {
-                "projectPath": "C:\\Fayed Anik\\skinet\\Core\\Core.csproj"
+              "/Users/fayedanik/Pet Projects 2/skinet/Core/Core.csproj": {
+                "projectPath": "/Users/fayedanik/Pet Projects 2/skinet/Core/Core.csproj"
               }
             }
           }
@@ -205,7 +196,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
         }
       }
     }
