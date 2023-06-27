@@ -29,8 +29,6 @@ namespace API.Controllers
             var product  = await _productRepository.GetProductByIdAsync(id);
             return Ok(product);
         }
-
-
     }
 }
 
