@@ -204,3 +204,6 @@ C:/Fayed Anik/skinet/API/bin/Debug/net6.0/Core.pdb
 /Users/fayedanik/Pet Projects 2/skinet/API/bin/Debug/net6.0/System.Memory.Data.dll
 /Users/fayedanik/Pet Projects 2/skinet/API/bin/Debug/net6.0/Mono.TextTemplating.dll
 /Users/fayedanik/Pet Projects 2/skinet/API/bin/Debug/net6.0/System.CodeDom.dll
+/Users/fayedanik/Pet Projects 2/skinet/API/bin/Debug/net6.0/AutoMapper.dll
+/Users/fayedanik/Pet Projects 2/skinet/API/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/fayedanik/Pet Projects 2/skinet/API/bin/Debug/net6.0/API.staticwebassets.runtime.json

@@ -10,10 +10,13 @@ ConfigurationManager configuration = builder.Configuration;
 
 builder.Services.AddControllers();
 
-builder.Services.AddScoped<IProductRepository,ProductRepository>();
-
-builder.Services.AddDbContext<StoreContext>(x => 
+builder.Services.AddDbContext<StoreContext>(x =>
     x.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddScoped<IProductRepository,ProductRepository>();
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepsository<>));
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -29,6 +32,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseStaticFiles();
 
 app.UseAuthorization();
 

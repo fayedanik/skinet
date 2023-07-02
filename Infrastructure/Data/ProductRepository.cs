@@ -4,29 +4,28 @@ using Core.Interfaces;
 using System.Threading.Tasks;
 using Core.Entities;
 using Microsoft.EntityFrameworkCore;
+using Core.Specifications.Products;
+
 namespace Infrastructure.Data
 {
     public class ProductRepository : IProductRepository
-    { 
-        private readonly StoreContext _context;
-        public ProductRepository(StoreContext context)
+    {
+        private readonly IGenericRepository<Product> _repository;
+
+        public ProductRepository(IGenericRepository<Product>repository)
         {
-            _context = context;
+            _repository = repository;
         }
         public async Task<Product?> GetProductByIdAsync(int id)
         {
-            return await _context.Products
-                .Include(p => p.ProductBrand)
-                .Include(p => p.ProductType)
-                .FirstOrDefaultAsync(p => p.Id == id);
+            var spec = new ProductsWithTypesAndBrandsSpecification(id);
+            return await _repository.GetItemAsync(spec);
         }
 
         public async Task<IReadOnlyList<Product>> GetProductsAsync()
         {
-            return await _context.Products
-                .Include(p => p.ProductBrand)
-                .Include(p => p.ProductType)
-                .ToListAsync();
+            var spec = new ProductsWithTypesAndBrandsSpecification();
+            return await _repository.GetItemsAsync(spec);
         }
     }
 

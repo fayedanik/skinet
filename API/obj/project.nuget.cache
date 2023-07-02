@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "PXsVV4xLNw8gaysYvVKIZUvhjcCwU/P5zbyWQsQNZngWMGPoUZshmgiWI2oP5txagfjFg6AJIyUjz4jwy9EDjQ==",
+  "dgSpecHash": "W2WWlX/Ydj1Y/AkUDMTKDclshYZ9RzByK17m5emcCX+elMQ6in936zgQEzApk8wkyTOu+Aa4HdzgcktdRu2BNw==",
   "success": true,
   "projectFilePath": "/Users/fayedanik/Pet Projects 2/skinet/API/API.csproj",
   "expectedPackageFiles": [
+    "/Users/fayedanik/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/Users/fayedanik/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/fayedanik/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/fayedanik/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
     "/Users/fayedanik/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/fayedanik/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "/Users/fayedanik/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
+    "/Users/fayedanik/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/fayedanik/.nuget/packages/microsoft.data.sqlclient/5.0.2/microsoft.data.sqlclient.5.0.2.nupkg.sha512",
     "/Users/fayedanik/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.0.1/microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "/Users/fayedanik/.nuget/packages/microsoft.data.sqlite.core/7.0.8/microsoft.data.sqlite.core.7.0.8.nupkg.sha512",

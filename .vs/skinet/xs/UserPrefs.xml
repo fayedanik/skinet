@@ -1,33 +1,29 @@
-﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{9E513A74-5F84-4CE1-AE67-7FD53D9A3B6F}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Infrastructure/Data/StoreContextSeed.cs">
+﻿<Properties StartupConfiguration="{9E513A74-5F84-4CE1-AE67-7FD53D9A3B6F}|Default" GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Core/Interfaces/IGenericRepository.cs">
     <Files>
-      <File FileName="API/Controllers/WeatherForecastController.cs" />
       <File FileName="API/Controllers/ProductsController.cs" />
-      <File FileName="API/appsettings.json" />
-      <File FileName="Core/Interfaces/IProductRepository.cs" />
-      <File FileName="Infrastructure/Data/StoreContext.cs" />
-      <File FileName="Infrastructure/Data/ProductRepository.cs" />
-      <File FileName="API/appsettings.Development.json" />
-      <File FileName="API/Properties/launchSettings.json" />
       <File FileName="API/Program.cs" />
-      <File FileName="Core/Entities/Product.cs" />
-      <File FileName="Infrastructure/Data/StoreContextSeed.cs" Line="18" Column="96" />
+      <File FileName="API/appsettings.Development.json" />
+      <File FileName="Core/Interfaces/IProductRepository.cs" />
+      <File FileName="Infrastructure/Data/ProductRepository.cs" />
+      <File FileName="API/Properties/launchSettings.json" />
+      <File FileName="Infrastructure/Data/StoreContextSeed.cs" />
+      <File FileName="Core/Interfaces/IGenericRepository.cs" Line="11" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="skinet" expanded="True">
+          <Node name="skinet">
             <Node name="API" expanded="True">
               <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
             </Node>
-            <Node name="Core" expanded="True" />
+            <Node name="Core">
+              <Node name="Interfaces" expanded="True">
+                <Node name="IGenericRepository.cs" selected="True" />
+              </Node>
+            </Node>
             <Node name="Infrastructure" expanded="True">
               <Node name="Data" expanded="True">
                 <Node name="SeedData" expanded="True" />
@@ -38,5 +34,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
 </Properties>
