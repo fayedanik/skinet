@@ -14,7 +14,6 @@ namespace Infrastructure.Data
         public GenericRepsository(StoreContext context)
 		{
             _context = context;
-
 		}
 
         public async Task<TEnity?> GetItemAsync(ISpecification<TEnity> spec)

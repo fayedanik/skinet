@@ -1,33 +1,44 @@
 ﻿<Properties StartupConfiguration="{9E513A74-5F84-4CE1-AE67-7FD53D9A3B6F}|Default" GitUserInfo="UsingMD">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Core/Interfaces/IGenericRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="API/MiddleWare/ExceptionMiddleware.cs">
     <Files>
       <File FileName="API/Controllers/ProductsController.cs" />
       <File FileName="API/Program.cs" />
       <File FileName="API/appsettings.Development.json" />
-      <File FileName="Core/Interfaces/IProductRepository.cs" />
       <File FileName="Infrastructure/Data/ProductRepository.cs" />
       <File FileName="API/Properties/launchSettings.json" />
       <File FileName="Infrastructure/Data/StoreContextSeed.cs" />
-      <File FileName="Core/Interfaces/IGenericRepository.cs" Line="11" Column="34" />
+      <File FileName="Core/Specifications/ISpecification.cs" />
+      <File FileName="Core/Specifications/Products/ProductsWithTypesAndBrandsSpecification.cs" />
+      <File FileName="API/Helpers/MappingProfiles.cs" />
+      <File FileName="API/Dtos/ProductToReturnDto.cs" />
+      <File FileName="Core/Entities/Product.cs" />
+      <File FileName="API/Helpers/ProductUrlResolver.cs" />
+      <File FileName="API/Errors/ApiResponse.cs" />
+      <File FileName="API/Controllers/BaseController.cs" />
+      <File FileName="API/Controllers/ErrorsController.cs" />
+      <File FileName="API/MiddleWare/ExceptionMiddleware.cs" Line="39" Column="54" />
+      <File FileName="API/Errors/ApiException.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="skinet">
-            <Node name="API" expanded="True">
+            <Node name="API">
               <Node name="Controllers" expanded="True" />
-              <Node name="Properties" expanded="True" />
+              <Node name="MiddleWare" expanded="True">
+                <Node name="ExceptionMiddleware.cs" selected="True" />
+              </Node>
               <Node name="appsettings.json" expanded="True" />
             </Node>
-            <Node name="Core">
-              <Node name="Interfaces" expanded="True">
-                <Node name="IGenericRepository.cs" selected="True" />
+            <Node name="Core" expanded="True">
+              <Node name="Entities" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Specifications" expanded="True">
+                <Node name="Products" expanded="True" />
               </Node>
             </Node>
             <Node name="Infrastructure" expanded="True">
-              <Node name="Data" expanded="True">
-                <Node name="SeedData" expanded="True" />
-              </Node>
+              <Node name="Data" expanded="True" />
             </Node>
           </Node>
         </State>
