@@ -1,0 +1,12 @@
+/Users/fayedanik/Pet Projects 2/skinet/SharedKernel/bin/Debug/net6.0/SharedKernel.deps.json
+/Users/fayedanik/Pet Projects 2/skinet/SharedKernel/bin/Debug/net6.0/SharedKernel.dll
+/Users/fayedanik/Pet Projects 2/skinet/SharedKernel/bin/Debug/net6.0/SharedKernel.pdb
+/Users/fayedanik/Pet Projects 2/skinet/SharedKernel/obj/Debug/net6.0/SharedKernel.csproj.AssemblyReference.cache
+/Users/fayedanik/Pet Projects 2/skinet/SharedKernel/obj/Debug/net6.0/SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+/Users/fayedanik/Pet Projects 2/skinet/SharedKernel/obj/Debug/net6.0/SharedKernel.AssemblyInfoInputs.cache
+/Users/fayedanik/Pet Projects 2/skinet/SharedKernel/obj/Debug/net6.0/SharedKernel.AssemblyInfo.cs
+/Users/fayedanik/Pet Projects 2/skinet/SharedKernel/obj/Debug/net6.0/SharedKernel.csproj.CoreCompileInputs.cache
+/Users/fayedanik/Pet Projects 2/skinet/SharedKernel/obj/Debug/net6.0/SharedKernel.dll
+/Users/fayedanik/Pet Projects 2/skinet/SharedKernel/obj/Debug/net6.0/refint/SharedKernel.dll
+/Users/fayedanik/Pet Projects 2/skinet/SharedKernel/obj/Debug/net6.0/SharedKernel.pdb
+/Users/fayedanik/Pet Projects 2/skinet/SharedKernel/obj/Debug/net6.0/ref/SharedKernel.dll

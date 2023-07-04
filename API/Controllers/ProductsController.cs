@@ -8,6 +8,7 @@ using AutoMapper;
 using API.Dtos;
 using API.Errors;
 using System.Net;
+using API.Queries;
 
 namespace API.Controllers
 {
@@ -24,9 +25,10 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts()
+        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts([FromQuery] ProductQuery query)
         {
-            var products = await _productRepository.GetProductsAsync();
+            var productSpecParam = ProductQuery.CreateProductSpecParam(query);
+            var products = await _productRepository.GetProductsAsync(productSpecParam);
             var result = _mapper.Map<IReadOnlyList<Product>,IReadOnlyList<ProductToReturnDto>>(products);
             return Ok(result);
         }

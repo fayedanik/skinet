@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Core.Specifications.Products;
+using SharedKernel.Enums;
 
 namespace Infrastructure.Data
 {
@@ -22,9 +23,9 @@ namespace Infrastructure.Data
             return await _repository.GetItemAsync(spec);
         }
 
-        public async Task<IReadOnlyList<Product>> GetProductsAsync()
+        public async Task<IReadOnlyList<Product>> GetProductsAsync(ProductSpecParams specParams)
         {
-            var spec = new ProductsWithTypesAndBrandsSpecification();
+            var spec = new ProductsWithTypesAndBrandsSpecification(specParams);
             return await _repository.GetItemsAsync(spec);
         }
     }

@@ -24,6 +24,7 @@
     <None Remove="Errors\" />
     <None Remove="MiddleWare\" />
     <None Remove="Extensions\" />
+    <None Remove="Queries\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,6 +37,7 @@
     <Folder Include="Errors\" />
     <Folder Include="MiddleWare\" />
     <Folder Include="Extensions\" />
+    <Folder Include="Queries\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
