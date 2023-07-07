@@ -23,10 +23,13 @@ namespace Infrastructure.Data
             return await _repository.GetItemAsync(spec);
         }
 
-        public async Task<IReadOnlyList<Product>> GetProductsAsync(ProductSpecParams specParams)
+        public async Task<(IReadOnlyList<Product> data, int totalCount)> GetProductsAsync(ProductSpecParams specParams)
         {
             var spec = new ProductsWithTypesAndBrandsSpecification(specParams);
-            return await _repository.GetItemsAsync(spec);
+            var countSpec = new ProductWithFiltersForCountSpecification(specParams);
+            var data = await _repository.GetItemsAsync(spec);
+            var totalCount = await _repository.CountAsync(countSpec);
+            return (data, totalCount);
         }
     }
 

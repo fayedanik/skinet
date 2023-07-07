@@ -11,7 +11,7 @@ namespace API.Queries
 
 		public OrderType OrderType { get; set; }
 
-		private int _PageLimit { get; set; }
+		private int _PageLimit { get; set; } = 5;
 
 		public int PageLimit
 		{

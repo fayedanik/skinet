@@ -9,7 +9,13 @@ namespace Core.Specifications
 
         public int PageNumber { get; set; }
 
-        public string? SearchText { get; set; }
+        public string? SearchText
+        {
+            get => _SearchText;
+            set => _SearchText = !string.IsNullOrWhiteSpace(value) ? value.ToLower() : string.Empty;
+        }
+
+        public string _SearchText { get; set; } = string.Empty;
 
         public string? OrderBy { get; set; }
 

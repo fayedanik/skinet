@@ -26,6 +26,11 @@ namespace Infrastructure.Data
             return await ApplySpecification(spec).ToListAsync();
         }
 
+        public async Task<int> CountAsync(ISpecification<TEnity> specification)
+        {
+            return await ApplySpecification(specification).CountAsync();
+        }
+
         public Task DeleteItemAsync(Expression<Func<TEnity, bool>> expression)
         {
             throw new NotImplementedException();
@@ -40,6 +45,8 @@ namespace Infrastructure.Data
         {
             return SpecificationEvaluator<TEnity>.GetQuery(_context.Set<TEnity>().AsQueryable(), spec);
         }
+
+        
     }
 }
 

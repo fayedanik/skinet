@@ -9,6 +9,7 @@ using API.Dtos;
 using API.Errors;
 using System.Net;
 using API.Queries;
+using API.Helpers;
 
 namespace API.Controllers
 {
@@ -25,11 +26,12 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts([FromQuery] ProductQuery query)
+        public async Task<ActionResult<Pagination<ProductToReturnDto>>> GetProducts([FromQuery] ProductQuery query)
         {
             var productSpecParam = ProductQuery.CreateProductSpecParam(query);
-            var products = await _productRepository.GetProductsAsync(productSpecParam);
-            var result = _mapper.Map<IReadOnlyList<Product>,IReadOnlyList<ProductToReturnDto>>(products);
+            var (data,totalCount) = await _productRepository.GetProductsAsync(productSpecParam);
+            var dtoData = _mapper.Map<IReadOnlyList<Product>,IReadOnlyList<ProductToReturnDto>>(data);
+            var result = new Pagination<ProductToReturnDto>(dtoData, totalCount);
             return Ok(result);
         }
 

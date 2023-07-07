@@ -9,6 +9,7 @@ namespace Core.Interfaces
 	{
 		Task<TEntity?> GetItemAsync(ISpecification<TEntity>specification);
 		Task<IReadOnlyList<TEntity>> GetItemsAsync(ISpecification<TEntity> specification);
+		Task<int> CountAsync(ISpecification<TEntity> specification);
 		Task SaveItemAsync(TEntity entity);
 		Task DeleteItemAsync(Expression<Func<TEntity, bool>> expression);
 	}
