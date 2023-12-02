@@ -18,16 +18,22 @@ namespace API.Controllers
     {
         private readonly IProductRepository _productRepository;
         private readonly IMapper _mapper;
+        private readonly ILogger<ProductsController> _logger;
 
-        public ProductsController(IProductRepository repo, IMapper mapper)
+        public ProductsController(
+            IProductRepository repo,
+            IMapper mapper,
+            ILogger<ProductsController> logger)
         {
             _productRepository = repo;
             _mapper = mapper;
+            _logger = logger;
         }
 
         [HttpGet]
         public async Task<ActionResult<Pagination<ProductToReturnDto>>> GetProducts([FromQuery] ProductQuery query)
         {
+            _logger.LogInformation("Inside GetProducts Controller");
             var productSpecParam = ProductQuery.CreateProductSpecParam(query);
             var (data,totalCount) = await _productRepository.GetProductsAsync(productSpecParam);
             var dtoData = _mapper.Map<IReadOnlyList<Product>,IReadOnlyList<ProductToReturnDto>>(data);
@@ -44,6 +50,15 @@ namespace API.Controllers
             if (product == null) return NotFound(new ApiResponse((int)HttpStatusCode.NotFound));
             var result = _mapper.Map<Product, ProductToReturnDto>(product);
             return Ok(result);
+        }
+
+        [HttpGet("types")]
+        public async Task<ActionResult<Pagination<ProductTypesToReturnDto>>> GetProductTypes()
+        {
+            var productTypes = await _productRepository.GetProductTypesAsync();
+            var dtoData = _mapper.Map<IReadOnlyList<ProductType>, IReadOnlyList<ProductTypesToReturnDto>>(productTypes);
+            var result = new Pagination<ProductTypesToReturnDto>(dtoData, productTypes.Count);
+            return result;
         }
     }
 }

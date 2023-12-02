@@ -12,10 +12,14 @@ namespace Infrastructure.Data
     public class ProductRepository : IProductRepository
     {
         private readonly IGenericRepository<Product> _repository;
+        private readonly IGenericRepository<ProductType> _productTypeRepository;
 
-        public ProductRepository(IGenericRepository<Product>repository)
+        public ProductRepository(
+            IGenericRepository<Product>repository,
+            IGenericRepository<ProductType>productTypeRepository)
         {
             _repository = repository;
+            _productTypeRepository = productTypeRepository;
         }
         public async Task<Product?> GetProductByIdAsync(int id)
         {
@@ -30,6 +34,11 @@ namespace Infrastructure.Data
             var data = await _repository.GetItemsAsync(spec);
             var totalCount = await _repository.CountAsync(countSpec);
             return (data, totalCount);
+        }
+
+        public async Task<IReadOnlyList<ProductType>> GetProductTypesAsync()
+        {
+            return await _productTypeRepository.GetItemsAsync();
         }
     }
 

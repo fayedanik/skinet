@@ -7,6 +7,7 @@ namespace Core.Interfaces
 {
 	public interface IGenericRepository<TEntity> where TEntity : BaseEntity
 	{
+		Task<IReadOnlyList<TEntity>> GetItemsAsync();
 		Task<TEntity?> GetItemAsync(ISpecification<TEntity>specification);
 		Task<IReadOnlyList<TEntity>> GetItemsAsync(ISpecification<TEntity> specification);
 		Task<int> CountAsync(ISpecification<TEntity> specification);

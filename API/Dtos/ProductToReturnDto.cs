@@ -22,6 +22,10 @@ namespace API.Dtos
         public string ProductBrand { get; set; }
 
         public int ProductBrandId { get; set; }
+
+        public int DiscountPrice { get; set; }
+
+        public int DiscountPercentage { get; set; }
     }
 }
 

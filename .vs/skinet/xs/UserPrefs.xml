@@ -1,78 +1,55 @@
 ﻿<Properties StartupConfiguration="{9E513A74-5F84-4CE1-AE67-7FD53D9A3B6F}|Default" GitUserInfo="UsingMD">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Core/Specifications/Products/ProductsWithTypesAndBrandsSpecification.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="API/Dtos/ProductTypesToReturnDto.cs">
     <Files>
-      <File FileName="API/Controllers/ProductsController.cs" Line="31" Column="61" />
-      <File FileName="API/Program.cs" Line="24" Column="22" />
-      <File FileName="API/appsettings.Development.json" />
-      <File FileName="API/Properties/launchSettings.json" />
-      <File FileName="Infrastructure/Data/StoreContextSeed.cs" />
-      <File FileName="Core/Specifications/ISpecification.cs" Line="15" Column="42" />
-      <File FileName="API/Helpers/MappingProfiles.cs" Line="1" Column="1" />
-      <File FileName="API/Dtos/ProductToReturnDto.cs" />
-      <File FileName="API/Helpers/ProductUrlResolver.cs" Line="1" Column="1" />
-      <File FileName="API/Controllers/ErrorsController.cs" Line="14" Column="44" />
-      <File FileName="API/MiddleWare/ExceptionMiddleware.cs" Line="46" Column="5" />
+      <File FileName="API/appsettings.Development.json" Line="3" Column="49" IsPinned="True" />
+      <File FileName="API/MiddleWare/ExceptionMiddleware.cs" />
+      <File FileName="API/appsettings.json" />
       <File FileName="API/Errors/ApiException.cs" />
-      <File FileName="Infrastructure/Data/ProductRepository.cs" Line="28" Column="60" />
-      <File FileName="Infrastructure/Data/GenericRepsository.cs" Line="41" Column="39" />
-      <File FileName="Core/Specifications/Products/ProductsWithTypesAndBrandsSpecification.cs" Line="17" Column="35" />
-      <File FileName="Infrastructure/Data/SpecificationEvaluator.cs" Line="29" Column="51" />
-      <File FileName="API/Errors/ApiValidationErrorResponse.cs" Line="8" Column="10" />
-      <File FileName="API/Controllers/WeatherForecastController.cs" Line="7" Column="40" />
-      <File FileName="API/Extensions/ApplicationServicesExtensions.cs" Line="26" Column="26" />
-      <File FileName="API/skinet.db" />
-      <File FileName="Core/Interfaces/IProductRepository.cs" Line="13" Column="46" />
-      <File FileName="SharedKernel/Enums/OrderType.cs" Line="4" Column="26" />
-      <File FileName="API/Queries/BaseQuery.cs" Line="22" Column="43" />
-      <File FileName="Infrastructure/Data/Config/ProductConfiguration.cs" Line="1" Column="1" />
-      <File FileName="Infrastructure/Data/StoreContext.cs" Line="11" Column="10" />
-      <File FileName="Core/Specifications/Products/ProductSpecParams.cs" Line="6" Column="40" />
-      <File FileName="Core/Specifications/BaseSpecParams.cs" Line="8" Column="29" />
-      <File FileName="Core/Entities/ProductType.cs" Line="1" Column="1" />
-      <File FileName="Core/Entities/ProductBrand.cs" Line="1" Column="1" />
-      <File FileName="API/Queries/ProductQuery.cs" Line="6" Column="15" />
+      <File FileName="API/Errors/ApiResponse.cs" />
+      <File FileName="API/Controllers/ErrorController.cs" />
+      <File FileName="API/Controllers/ProductsController.cs" />
+      <File FileName="API/Program.cs" />
+      <File FileName="API/Dtos/ProductTypesToReturnDto.cs" Line="1" Column="1" />
+      <File FileName="Core/Specifications/BaseSpecification.cs" />
+      <File FileName="Infrastructure/Data/Config/ProductConfiguration.cs" />
+      <File FileName="Infrastructure/Data/StoreContext.cs" />
+      <File FileName="Infrastructure/Data/StoreContextSeed.cs" />
+      <File FileName="Infrastructure/Data/SpecificationEvaluator.cs" />
+      <File FileName="Infrastructure/Data/ProductRepository.cs" />
+      <File FileName="Core/Specifications/Products/ProductsWithTypesAndBrandsSpecification.cs" />
+      <File FileName="Core/Specifications/Products/ProductSpecParams.cs" />
+      <File FileName="Core/Entities/ProductBrand.cs" />
+      <File FileName="Core/Specifications/ISpecification.cs" />
+      <File FileName="Core/Specifications/BaseSpecParams.cs" />
+      <File FileName="SharedKernel/Enums/OrderType.cs" />
+      <File FileName="API/Controllers/BaseController.cs" />
+      <File FileName="API/Helpers/MappingProfiles.cs" />
+      <File FileName="API/Helpers/ProductUrlResolver.cs" />
+      <File FileName="API/Extensions/ApplicationServicesExtensions.cs" />
+      <File FileName="API/Properties/launchSettings.json" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="skinet">
+          <Node name="skinet" expanded="True">
             <Node name="API" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Queries" expanded="True" />
-            </Node>
-            <Node name="Core" expanded="True">
-              <Node name="Entities" expanded="True" />
-              <Node name="Interfaces" expanded="True" />
-              <Node name="Specifications" expanded="True">
-                <Node name="Products" expanded="True">
-                  <Node name="ProductsWithTypesAndBrandsSpecification.cs" selected="True" />
-                </Node>
+              <Node name="Dtos" expanded="True">
+                <Node name="ProductTypesToReturnDto.cs" selected="True" />
               </Node>
-            </Node>
-            <Node name="Infrastructure" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="ProjectDependencies" expanded="True" />
-              </Node>
-              <Node name="Data" expanded="True">
-                <Node name="Config" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="SharedKernel" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
-              </Node>
-              <Node name="Enums" expanded="True" />
+              <Node name="MiddleWare" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

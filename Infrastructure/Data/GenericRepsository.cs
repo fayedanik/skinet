@@ -46,7 +46,10 @@ namespace Infrastructure.Data
             return SpecificationEvaluator<TEnity>.GetQuery(_context.Set<TEnity>().AsQueryable(), spec);
         }
 
-        
+        public async Task<IReadOnlyList<TEnity>> GetItemsAsync()
+        {
+            return await _context.Set<TEnity>().ToListAsync();
+        }
     }
 }
 

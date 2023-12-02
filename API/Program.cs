@@ -2,6 +2,7 @@ using API.Extensions;
 using API.MiddleWare;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,13 @@ var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager configuration = builder.Configuration;
 
 builder.Services.AddApplicationServices(configuration);
+
+builder.Host.UseSerilog((context,configuration) =>
+{
+    configuration
+        .ReadFrom.Configuration(context.Configuration);
+});
+
 
 var app = builder.Build();
 
@@ -25,9 +33,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseSerilogRequestLogging();
+
 app.UseHttpsRedirection();
 
 app.UseStaticFiles();
+
+app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
 
