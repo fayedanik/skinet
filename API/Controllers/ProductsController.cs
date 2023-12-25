@@ -10,6 +10,7 @@ using API.Errors;
 using System.Net;
 using API.Queries;
 using API.Helpers;
+using MediatR;
 
 namespace API.Controllers
 {
@@ -19,15 +20,17 @@ namespace API.Controllers
         private readonly IProductRepository _productRepository;
         private readonly IMapper _mapper;
         private readonly ILogger<ProductsController> _logger;
-
+        public readonly IMediator _mediator;
         public ProductsController(
             IProductRepository repo,
             IMapper mapper,
-            ILogger<ProductsController> logger)
+            ILogger<ProductsController> logger,
+            IMediator mediator)
         {
             _productRepository = repo;
             _mapper = mapper;
             _logger = logger;
+            _mediator = mediator;
         }
 
         [HttpGet]
@@ -60,6 +63,12 @@ namespace API.Controllers
             var result = new Pagination<ProductTypesToReturnDto>(dtoData, productTypes.Count);
             return result;
         }
+
+        // [HttpGet]
+        // public async Task<ActionResult<Pagination<ProductTypesToReturnDto>>> GetProductBrands()
+        // {
+
+        // }
     }
 }
 

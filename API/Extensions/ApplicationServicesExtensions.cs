@@ -1,6 +1,8 @@
 ﻿using System;
 using API.Errors;
+using Application;
 using Core.Interfaces;
+using Infrastructure;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -32,12 +34,24 @@ namespace API.Extensions
 
                 });
 
+            services.AddMediatR(cfg => 
+                cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
+            
+            //database connection start
             services.AddDbContext<StoreContext>(x =>
                 x.UseSqlite(config.GetConnectionString("DefaultConnection")));
+
+            services.Configure<MongoDbSettings>(config.GetSection(nameof(MongoDbSettings)));
+            //database connection end
 
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepsository<>));
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            
+            services
+                .RegisterApplicationServices()
+                .RegisterInfrastructureServices();
+
             services.AddCors(opt =>
             {
                 opt.AddPolicy("CorsPolicy", policy =>

@@ -10,9 +10,7 @@ namespace API.Errors
 		}
 
         public int StatusCode { get; set; }
-
 		public string? ErrorMessage { get; set; }
-
         private string? GetDefaultErrorMessage(int statusCode)
         {
 			return statusCode switch

@@ -32,6 +32,8 @@
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Controllers/IAM/" />
+    <Folder Include="Controllers/UAM/" />
     <Folder Include="Helpers\" />
     <Folder Include="Dtos\" />
     <Folder Include="wwwroot\" />
